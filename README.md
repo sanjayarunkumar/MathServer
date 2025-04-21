@@ -33,6 +33,8 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ```
+maath.html
+
 <html>
 <head>
     <title>Power Calculator</title>
@@ -102,6 +104,8 @@ Publish the website in the given URL.
 </body>
 </html>
 
+views.html
+
 from django.shortcuts import render 
 def powercalc(request): 
     context={} 
@@ -121,6 +125,8 @@ def powercalc(request):
         context['resistance'] = R 
         print('power=',power) 
     return render(request,'mathapp/math.html',context)
+
+urls.html
 
 from django.contrib import admin 
 from django.urls import path 
